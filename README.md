@@ -1,8 +1,23 @@
 # Merge CSV files
 
 ## Description
+
 This script merges all CSV files in a given directory into a single CSV file.
 
-## Usage
+## Setup
+
+Add your csv files to the `data/in` directory.
+
 ```bash
-python merge_csv_files.py
+poetry install
+```
+
+## Usage
+
+```bash
+poetry run app
+```
+
+The merged CSV file will be saved to the `data/out` directory.
+
+A log file will be saved at `app.log` in the root directory.
