@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "merge-csv-files"
+version = "0.1.0"
+description = ""
+authors = ["ybaudraz <yannick.baudraz@swissquote.ch>"]
+readme = "README.md"
+
+[[tool.poetry.source]]
+name = "nexus"
+url = "https://nexus.bank.swissquote.ch/repository/pypi/simple"
+priority = "default"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+pandas = "^2.1.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+app = "merge_csv_files.main:main"
